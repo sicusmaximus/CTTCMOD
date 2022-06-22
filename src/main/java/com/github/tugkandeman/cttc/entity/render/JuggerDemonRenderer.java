@@ -1,5 +1,6 @@
 package com.github.tugkandeman.cttc.entity.render;
 
+import com.github.tugkandeman.cttc.Cttc;
 import com.github.tugkandeman.cttc.entity.JuggerDemonEntity;
 import com.github.tugkandeman.cttc.entity.model.JuggerDemonModel;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
@@ -16,6 +17,6 @@ public class JuggerDemonRenderer extends GeoEntityRenderer<JuggerDemonEntity> {
 
     @Override
     public ResourceLocation getEntityTexture(JuggerDemonEntity entity) {
-        return null;
+        return new ResourceLocation(Cttc.MOD_ID, "textures/entity/jugger.png");
     }
 }
